@@ -31,6 +31,11 @@ sourceSets {
     }
 }
 
+application {
+    // Define the main class for the application
+    mainClass.set("com.likanug.dual.AppKt")
+}
+
 tasks.jar.configure {
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
     manifest.attributes["Main-Class"] = "com.likanug.dual.AppKt"
